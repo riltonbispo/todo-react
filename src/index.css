@@ -1,0 +1,66 @@
+/* Reset CSS */
+
+/* Box-sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles (bullet points) */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Remove default hyperlink styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default form styles */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  outline: none;
+  appearance: none;
+}
+
+/* Set base font and line-height */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Optional: Add additional reset rules as needed */
+
