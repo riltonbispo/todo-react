@@ -5,3 +5,16 @@ export const Container = styled.div`
   color: #797a81;
   min-height: 100vh;
 `
+
+export const Area = styled.div`
+  margin: auto;
+  max-width: 980px;
+  padding: 10px;
+`
+
+export const Header = styled.h1`
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  padding-bottom: 20px;
+`
