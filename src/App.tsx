@@ -1,6 +1,10 @@
+import * as C from './App.styles'
+
 const App = () => {
   return (
-    <p>ola</p>
+    <C.Container>
+      <p>App</p>
+    </C.Container>
   )
 }
 
