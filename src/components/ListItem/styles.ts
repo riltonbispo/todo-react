@@ -22,4 +22,9 @@ export const Container = styled.div(({done}: ContainerProps)=>(`
     color: gray;
     text-decoration: ${done ? 'line-through' : 'initial'} 
   }
+
+  span {
+    color: ${done? 'gray' : 'white'};
+    text-decoration: ${done ? 'line-through' : 'initial'} 
+  }
 `))
