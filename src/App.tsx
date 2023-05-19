@@ -6,18 +6,7 @@ import { ListItem } from "./components/ListItem";
 import { AddArea } from "./components/AddArea";
 
 const App = () => {
-  const [list, setList] = useState<Item[]>([
-    {
-      id: 1,
-      name: "dormid 8hrs",
-      done: true,
-    },
-    {
-      id: 2,
-      name: "ir ao mercado",
-      done: false,
-    },
-  ]);
+  const [list, setList] = useState<Item[]>([]);
 
   const handleAddTask = (taskName: string) => {
     let newList = [...list]
@@ -45,7 +34,7 @@ const App = () => {
   return (
     <C.Container>
       <C.Area>
-        <C.Header>Header</C.Header>
+        <C.Header>Todo</C.Header>
 
         <AddArea onEnter={handleAddTask} ></AddArea>
 
