@@ -35,6 +35,13 @@ const App = () => {
     setList(newList)
   }
 
+  const removeTask = (item: number) => {
+    const newList = list.filter((_, index) => index !== item);
+    setList(newList);
+  };
+
+  console.log(list)
+
   return (
     <C.Container>
       <C.Area>
@@ -43,7 +50,7 @@ const App = () => {
         <AddArea onEnter={handleAddTask} ></AddArea>
 
         {list.map((item, index)=>(
-          <ListItem item={item} key={index} itemKey={index} handleTask={handleDoneTask} />
+          <ListItem item={item} key={index} itemKey={index} handleTask={handleDoneTask} removeTask={removeTask} />
         ))}
 
       </C.Area>
