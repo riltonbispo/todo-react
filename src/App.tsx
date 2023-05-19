@@ -29,15 +29,23 @@ const App = () => {
     setList(newList)
   }
 
+  const handleDoneTask = (item: number) => {
+    let newList = [...list]
+    newList[item].done = !newList[item].done
+    setList(newList)
+  }
+
   return (
     <C.Container>
       <C.Area>
         <C.Header>Header</C.Header>
 
         <AddArea onEnter={handleAddTask} ></AddArea>
+
         {list.map((item, index)=>(
-          <ListItem item={item} key={index}/>
+          <ListItem item={item} key={index} itemKey={index} handleTask={handleDoneTask} />
         ))}
+
       </C.Area>
     </C.Container>
   );
