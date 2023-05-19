@@ -11,20 +11,34 @@ export const Container = styled.div(({done}: ContainerProps)=>(`
   border-radius: 4px;
   margin-block: 10px;
   align-items: center;
+  justify-content: space-between;
 
-  input {
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
+  .item {
+    display: flex;
+    align-items: center;
+
+
+    input {
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+    }
+
+    label {
+      color: gray;
+      text-decoration: ${done ? 'line-through' : 'initial'} 
+    }
+
+    span {
+      color: ${done? 'gray' : 'white'};
+      margin-left: 5px;
+    }
+
   }
 
-  label {
-    color: gray;
-    text-decoration: ${done ? 'line-through' : 'initial'} 
-  }
-
-  span {
-    color: ${done? 'gray' : 'white'};
-    text-decoration: ${done ? 'line-through' : 'initial'} 
+  button {
+    background-color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
   }
 `))
